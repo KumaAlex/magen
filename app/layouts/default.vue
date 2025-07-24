@@ -1,5 +1,5 @@
 <template>
-  <h1>jopa</h1>
+  <Header />
   <slot />
-  <h2>hopa</h2>
+  <Footer />
 </template>
