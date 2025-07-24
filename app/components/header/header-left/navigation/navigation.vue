@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex gap-6">
+  <ul class="hidden lg:flex gap-4">
     <li v-for="nav in navigationLinks" :key="nav.id" class="relative group">
       <a :href="`#${nav.id}`" class="flex items-center gap-1 hover:text-[#FFD700]">
         {{ nav.title }}
@@ -56,7 +56,7 @@ const navigationLinks: NavigationLinksModel[] = [
     ],
   },
   { id: 'partners', title: 'Партнеры' },
-  { id: 'contacts', title: 'Контакты' },
+  { id: 'contacts', title: 'Консультация' },
 ];
 
 </script>

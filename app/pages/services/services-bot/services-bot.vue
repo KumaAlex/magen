@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full bg-gray-900/80 py-16">
-    <div class="max-w-5xl mx-auto text-center">
+  <div class="flex mt-10 w-full py-16">
+    <div class="p-default max-w-5xl mx-auto text-center">
       <h3 class="text-[#FFD700] text-2xl font-bold mb-8">
         При определении стоимости услуг учитываются факторы:
       </h3>

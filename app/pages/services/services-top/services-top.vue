@@ -3,7 +3,7 @@
     <div
         v-for="(service, index) in services"
         :key="index"
-        class="scroll-mt-[100px] bg-gray-900/80 text-white p-6 rounded-xl flex flex-col items-center text-center"
+        class="scroll-mt-[100px] bg-black/40 text-white p-6 rounded-xl flex flex-col items-center text-center shadow-lg"
         :id="service.id"
     >
       <NuxtImg

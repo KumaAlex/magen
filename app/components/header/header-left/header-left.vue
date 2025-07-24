@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-12">
+  <div class="flex items-center gap-4">
     <a href="#home">
       <NuxtImg
           src="/icons/logo.png"

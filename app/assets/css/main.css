@@ -11,5 +11,5 @@
 }
 
 .p-default {
-    @apply px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32;
+    @apply px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20;
 }

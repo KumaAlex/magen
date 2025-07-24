@@ -23,12 +23,8 @@
 
       <!-- Правая колонка -->
       <div class="flex flex-col items-center">
-        <div class="w-full h-auto max-w-md bg-gray-800 rounded-lg shadow-lg">
-          <NuxtImg
-              src="/images/object-guard.jpg"
-              class="w-full h-full object-contain rounded-lg"
-              alt="График роста сотрудников"
-          />
+        <div class="w-full h-[400px] max-w-3xl bg-gray-800/80 rounded-lg shadow-lg p-4">
+          <LineChart :chart-data="chartData" :chart-options="chartOptions" />
         </div>
         <p class="mt-4 text-black text-center text-sm md:text-base">
           Наши кадры постоянно растут, обеспечивая надежность и качество услуг.
@@ -39,6 +35,73 @@
 </template>
 
 <script setup lang="ts">
+import LineChart from "../../components/line-chart/line-chart.vue";
+
+const chartData = {
+  labels: ['2013–2019', '2020', '2021', '2022', '2023', '2024'],
+  datasets: [
+    {
+      backgroundColor: (context: any) => {
+        const ctx = context.chart.ctx
+        const gradient = ctx.createLinearGradient(0, 0, 0, 400)
+        gradient.addColorStop(0, 'yellow')
+        gradient.addColorStop(1, 'black')
+        return gradient
+      },
+      borderColor: '#facc15', // жёлтый
+      data: [610, 810, 931, 1120, 1260, 1350],
+      fill: true,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      pointBackgroundColor: '#facc15',
+      pointBorderColor: '#fff',
+      pointBorderWidth: 2
+    },
+  ],
+}
+const chartOptions = {
+  responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+    x: {
+      ticks: {
+        color: '#ffffff', // цвет текста по оси X
+            font: {
+          size: 16,        // размер шрифта оси X
+              weight: 'bold',  // жирность
+        },
+      },
+      grid: {
+        color: '#444' // цвет сетки (опционально)
+      }
+    },
+    y: {
+      ticks: {
+        color: '#ffffff', // цвет текста по оси Y
+            font: {
+          size: 16,        // размер шрифта оси Y
+              weight: 'bold',
+        },
+      },
+      grid: {
+        color: '#444'
+      }
+    }
+  },
+  plugins: {
+    legend: {
+      display: false
+    },
+    title: {
+      display: true,
+          text: 'Рост увеличения сотрудников',
+          color: '#fff',
+          font: {
+        size: 20
+      }
+    }
+  }
+}
 
 </script>
 

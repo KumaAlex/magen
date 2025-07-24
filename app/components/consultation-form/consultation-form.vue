@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submitForm" class="bg-white text-black p-8 max-w-xl mx-auto rounded shadow-md space-y-6">
+  <form @submit.prevent="submitForm" class="bg-white text-black p-8 md:mb-12 max-w-xl mx-auto rounded space-y-6 shadow-lg">
     <div class="text-center">
       <h2 class="text-2xl font-bold mb-2">Оставить заявку</h2>
       <p class="text-gray-700">Оставьте заявку и мы перезвоним вам в течение 10 минут</p>
@@ -37,7 +37,7 @@
           type="submit"
           class="bg-[#FFD700] text-black font-semibold px-6 py-3 rounded hover:text-white hover:bg-black transition duration-300"
       >
-        Оставить заявку
+        Получить консультацию
       </button>
     </div>
   </form>

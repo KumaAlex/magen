@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-black pt-12">
+  <section class="bg-black/90 pt-12">
     <h2 class="text-center text-[#FFD700] text-3xl font-bold mb-10">
       С 2012 года мы рады предложить Вам следующие услуги:
     </h2>
@@ -9,7 +9,7 @@
     <!-- Mobile: horizontal scroll -->
     <services-mobile class="md:hidden flex px-4" :services="services" />
 
-    <services-bot class="bg-gray-900/80 mt-10" />
+    <services-bot />
   </section>
 </template>
 

@@ -1,7 +1,9 @@
 <template>
-  <div class="flex gap-6 items-center">
+  <div class="flex gap-4 items-center">
     <Email />
     <Contact />
+
+    <side-nav />
   </div>
 </template>
 
