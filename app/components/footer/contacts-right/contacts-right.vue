@@ -7,19 +7,19 @@
       </div>
       <div class="flex items-center gap-3">
         <Icon name="mdi:phone" class="text-2xl text-gray-200" />
-        <span>Офис: +7 (727) 313-13-66</span>
+        <a href="tel:+77273131366">Офис: +7 (727) 313-13-66</a>
       </div>
       <div class="flex items-center gap-3">
         <Icon name="mdi:cellphone-iphone" class="text-2xl text-gray-200" />
-        <span>Моб.: +7 (705) 895-78-38</span>
+        <a href="tel:+77058957838">Моб.: +7 (705) 895-78-38</a>
       </div>
       <div class="flex items-center gap-3">
         <Icon name="mdi:email-edit-outline" class="text-2xl text-gray-200" />
-        <span>info@magen.kz</span>
+        <a href="mailto:info@magen.kz">info@magen.kz</a>
       </div>
       <div class="flex items-center gap-3">
         <Icon name="mdi:web" class="text-2xl text-gray-200" />
-        <span>www.magen.kz</span>
+        <a href="https://www.magen.kz" target="_blank" rel="noopener noreferrer">www.magen.kz</a>
       </div>
     </div>
 

@@ -106,6 +106,7 @@ const navigationLinks: NavigationLinksModel[] = [
       { id: 'personal-security', title: 'Профессиональная личная охрана' },
       { id: 'event-security', title: 'Охрана массовых мероприятий' },
       { id: 'security-systems', title: 'Технические средства охраны' },
+      { id: 'fire-security-alarm', title: 'Пожарно-охранная сигнализация' },
     ],
   },
   { id: 'partners', title: 'Партнеры' },

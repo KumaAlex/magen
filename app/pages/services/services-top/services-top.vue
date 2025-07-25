@@ -8,7 +8,7 @@
     >
       <NuxtImg
           :src="`/images/services/${service.icon}`"
-          class="h-50 text-[#FFD700] mb-4"
+          class="h-50 text-[#FFD700] mb-4 rounded"
           :alt="service.icon"
       />
       <h3 class="text-[#FFD700] text-xl font-bold mb-2">{{ service.title }}</h3>

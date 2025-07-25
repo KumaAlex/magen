@@ -17,18 +17,18 @@
 
 <script setup>
 const companies = [
-  { name: 'АО «Казахтелеком»', logo: '/logos/logo-kazahtelekom.png' },
-  { name: 'Филиал «Шлюмберже Ложелко Инк» (нефтесервис)', logo: '/logos/schlumberger.jpg' },
-  { name: 'ТОО «JTI Kazakhstan» (Табачная фабрика)', logo: '/logos/JTI-logo-1.png' },
-  { name: 'ТОО «Лукойл Лубрикантс Центральная Азия»', logo: '/logos/Lukoil-logo.png' },
-  { name: 'АО «Aitas» (Макинская, Усть-Каменогорская, Капчагайская птицефабрика)', logo: '/logos/aitas-logo.jpg' },
-  { name: 'АО «Шымкентцемент» (цементный завод)', logo: '/logos/heidelbergCement-logo.png' },
-  { name: 'ТОО «Real Estate and Construction» (ТРЦ Достык Плаза)', logo: '/logos/dostykPlaza-logo.png' },
-  { name: 'ТОО «Мега Плаза» (ТРЦ Мега Силквей)', logo: '/logos/megaSilkway-logo.jpg' },
-  { name: 'ТОО «Леруа Мерлен Казахстан»', logo: '/logos/Leroymerlin-logo.jpeg' },
-  { name: 'ТОО «Букмекерская контора Olimp.kz (Олимп.кз)»', logo: '/logos/olimpbet-logo.png' },
-  { name: 'ТОО «AB Restaurants» (сеть ресторанов ABR)', logo: '/logos/abr-logo.png' },
-  { name: 'АО «Компания ФудМастер»', logo: '/logos/foodMaster-logo.jpg' },
+  { name: 'АО «Казахтелеком»', logo: '/logo/logo-kazahtelekom.webp' },
+  { name: 'Филиал «Шлюмберже Ложелко Инк» (нефтесервис)', logo: '/logo/schlumberger.webp' },
+  { name: 'ТОО «JTI Kazakhstan» (Табачная фабрика)', logo: '/logo/JTI-logo-1.webp' },
+  { name: 'ТОО «Лукойл Лубрикантс Центральная Азия»', logo: '/logo/Lukoil-logo.webp' },
+  { name: 'АО «Aitas» (Макинская, Усть-Каменогорская, Капчагайская птицефабрика)', logo: '/logo/aitas-logo.webp' },
+  { name: 'АО «Шымкентцемент» (цементный завод)', logo: '/logo/heidelbergCement-logo.webp' },
+  { name: 'ТОО «Real Estate and Construction» (ТРЦ Достык Плаза)', logo: '/logo/dostykPlaza-logo.webp' },
+  { name: 'ТОО «Мега Плаза» (ТРЦ Мега Силквей)', logo: '/logo/megaSilkway-logo.webp' },
+  { name: 'ТОО «Леруа Мерлен Казахстан»', logo: '/logo/Leroymerlin-logo.webp' },
+  { name: 'ТОО «Букмекерская контора Olimp.kz (Олимп.кз)»', logo: '/logo/olimpbet-logo.webp' },
+  { name: 'ТОО «AB Restaurants» (сеть ресторанов ABR)', logo: '/logo/abr-logo.webp' },
+  { name: 'АО «Компания ФудМастер»', logo: '/logo/foodMaster-logo.webp' },
 ]
 
 </script>

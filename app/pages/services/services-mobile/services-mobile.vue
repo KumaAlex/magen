@@ -10,7 +10,7 @@
     >
       <NuxtImg
           :src="`/images/services/${service.icon}`"
-          class="h-40 text-[#FFD700] mb-4 mx-auto"
+          class="h-30 sm:h-40 text-[#FFD700] mb-4 mx-auto rounded"
           :alt="service.icon"
       />
       <h3 class="text-[#FFD700] text-lg font-bold mb-2">

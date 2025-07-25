@@ -5,7 +5,7 @@
     <Services id="services" class="scroll-mt-[100px]" />
     <Staff/>
     <Partners id="partners" class="scroll-mt-[100px]" />
-    <ConsultationForm id="contacts" class="scroll-mt-[100px]" />
+<!--    <ConsultationForm id="contacts" class="scroll-mt-[100px]" />-->
 
     <a href="https://wa.me/77058957838" target="_blank" rel="noopener noreferrer">
       <PulseIcon>

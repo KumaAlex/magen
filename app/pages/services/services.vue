@@ -25,19 +25,19 @@ const services: ServiceModel[] = [
   {
     id: 'object-guarding',
     title: 'Охрана объектов',
-    icon: 'object-guard.jpg',
+    icon: 'object-guard.webp',
     description: 'Охрана различных объектов: бизнес-центров, складов, торговых точек и т.д.'
   },
   {
     id: 'cargo-escort',
     title: 'Охрана и сопровождение грузов',
-    icon: 'cargo-escort.jpg',
+    icon: 'cargo-escort.webp',
     description: 'Гарантированная безопасность при транспортировке.'
   },
   {
     id: 'personal-security',
     title: 'Профессиональная личная охрана',
-    icon: 'personal-security.jpg',
+    icon: 'personal-security.webp',
     description: 'Сопровождение VIP персон, политиков, бизнесменов.'
   },
   {
@@ -50,7 +50,13 @@ const services: ServiceModel[] = [
     id: 'security-systems',
     title: 'Технические средства охраны',
     icon: 'security-systems.webp',
-    description: 'Cистемы охранной и пожарной сигнализации, системы управления доступом, системы видеонаблюдения, инженерно-технические средства охраны.'
+    description: 'Системы управления доступом, системы видеонаблюдения, инженерно-технические средства охраны.'
+  },
+  {
+    id: 'fire-security-alarm',
+    title: 'Пожарно-охранная сигнализация',
+    icon: 'fire-security-alarm.webp',
+    description: 'Cистемы охранной и пожарной сигнализации.'
   }
 ]
 
