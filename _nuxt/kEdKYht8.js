@@ -1,0 +1,1 @@
+import o from"./DEiCA9XT.js";import{_ as s}from"./DRgm14KL.js";import{d as t,y as a,A as r,C as e,z as c}from"./Dc7UgJIm.js";const m={class:"bg-gray-100 py-16 px-6 md:px-20"},_={class:"max-w-7xl mx-auto grid md:grid-cols-5 gap-8 items-center"},x=t({__name:"about",setup(n){return(i,p)=>(c(),a("div",m,[r("div",_,[e(o),e(s)])]))}});export{x as _};
