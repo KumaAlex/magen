@@ -8,7 +8,7 @@
             :key="index"
             :src="company.logo"
             :alt="company.name"
-            class="h-16 mx-auto lg:grayscale hover:grayscale-0 transition duration-300 ease-in-out"
+            class="h-16 mx-auto lg:grayscale hover:grayscale-0 transition duration-300 ease-in-out hover:scale-140"
         />
       </div>
     </div>
