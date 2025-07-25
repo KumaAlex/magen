@@ -1,1 +1,0 @@
-import{Z as e,_ as o,y as t,A as a,z as c}from"./Dc7UgJIm.js";const n=e("/images/about/handshake.webp"),r={},d={class:"hidden md:block md:col-span-2"};function l(m,s){return c(),t("div",d,s[0]||(s[0]=[a("img",{src:n,alt:"Партнёрство и доверие",class:"w-full h-auto rounded-xl shadow-md object-cover"},null,-1)]))}const i=o(r,[["render",l]]);export{i as default};
