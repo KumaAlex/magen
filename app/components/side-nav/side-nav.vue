@@ -78,10 +78,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Icon } from '#components'
-import type { NavigationLinksModel } from '@/models/navigation-link-model'
+import type { NavigationLinksModel } from "../../models/navigation-link-model";
 
-const props = defineProps<{ isScrolled: boolean }>()
+const { t } = useI18n()
 
 const isOpen = ref(false)
 const openedSub = ref<string | null>(null)
@@ -95,23 +94,24 @@ const toggleSub = (id: string) => {
   openedSub.value = openedSub.value === id ? null : id
 }
 
-const navigationLinks: NavigationLinksModel[] = [
-  { id: 'about', title: 'О Компании' },
+const navigationLinks = computed<NavigationLinksModel[]>(() => [
+  { id: 'about', title: t('components.navigation.about') },
   {
     id: 'services',
-    title: 'Услуги',
+    title: t('components.navigation.services.title'),
     subLinks: [
-      { id: 'object-guarding', title: 'Охрана объектов' },
-      { id: 'cargo-escort', title: 'Охрана и сопровождение грузов' },
-      { id: 'personal-security', title: 'Профессиональная личная охрана' },
-      { id: 'event-security', title: 'Охрана массовых мероприятий' },
-      { id: 'security-systems', title: 'Технические средства охраны' },
-      { id: 'fire-security-alarm', title: 'Пожарно-охранная сигнализация' },
+      { id: 'object-guarding', title: t('components.navigation.services.object-guarding') },
+      { id: 'cargo-escort', title: t('components.navigation.services.cargo-escort') },
+      { id: 'personal-security', title: t('components.navigation.services.personal-security') },
+      { id: 'event-security', title: t('components.navigation.services.event-security') },
+      { id: 'security-systems', title: t('components.navigation.services.security-systems') },
+      { id: 'fire-security-alarm', title: t('components.navigation.services.fire-security-alarm') },
     ],
   },
-  { id: 'partners', title: 'Партнеры' },
-  { id: 'contacts', title: 'Консультация' },
-]
+  { id: 'partners', title: t('components.navigation.partners') },
+  { id: 'contacts', title: t('components.navigation.contacts') },
+])
+
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white py-14">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-12">С кем мы работали</h2>
+      <h2 class="text-4xl font-bold mb-12">{{ t("partners.title") }}</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 items-center">
         <img
             v-for="(company, index) in companies"
@@ -16,6 +16,7 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
 const companies = [
   { name: 'АО «Казахтелеком»', logo: '/logo/logo-kazahtelekom.webp' },
   { name: 'Филиал «Шлюмберже Ложелко Инк» (нефтесервис)', logo: '/logo/schlumberger.webp' },

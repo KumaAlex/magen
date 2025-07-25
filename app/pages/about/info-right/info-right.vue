@@ -1,40 +1,33 @@
 <template>
   <div class="md:col-span-3 space-y-6">
     <h2 class="text-3xl font-bold text-center text-black">
-      Охранное агентство Маген
+      {{ t('reuse.companyName') }}
     </h2>
 
     <div class="space-y-4 text-black text-base leading-relaxed">
-      <div v-for="str in shortInfo" :key="str">
-        {{ str }}
+      <div
+          v-for="i in 5"
+          :key="i"
+      >
+        {{ t(`about.shortInfo.${i - 1}`) }}
       </div>
     </div>
 
     <ul class="mt-6 space-y-3 text-black text-base">
-      <li v-for="feature in features" class="flex gap-2 items-center">
+      <li
+          v-for="i in 6"
+          :key="i"
+          class="flex gap-2 items-center"
+      >
         <span class="mt-1 w-3 h-3 bg-[#FFD700] rounded-full shrink-0"></span>
-        {{ feature }}
+        {{ t(`about.features.${i - 1}`) }}
       </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-const shortInfo: string[] = [
-  'ТОО «Охранное агентство Маген» работает на рынке охранных услуг с 2012 года.',
-  'За время своей работы мы накопили большой практический опыт по организации охраны объектов различного назначения.',
-  'На сегодняшний день нашими клиентами являются как крупные компании, так и предприятия малого и среднего бизнеса.',
-  'Материальная ответственность охранных услуг перед Заказчиками застрахована на 100 000 000 тенге.',
-  'За истекший период работы от Заказчиков нет ни одного обращения по возмещению ущерба.',
-]
-const features: string[] = [
-  'Репутация надежного партнера.',
-  'Индивидуальный подход к каждому клиенту.',
-  'Профессиональные, высококвалифицированные кадры.',
-  'Взаимодействие с правоохранительными органами и специальными службами.',
-  'Высокая техническая оснащенность.',
-  'Доступные цены, гибкая система скидок.',
-  ]
+const { t } = useI18n()
 </script>
 
 <style scoped>

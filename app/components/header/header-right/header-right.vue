@@ -3,6 +3,7 @@
     <Email />
     <Contact />
 
+    <locale />
     <side-nav />
   </div>
 </template>

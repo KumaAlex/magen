@@ -20,8 +20,19 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    locales: [
+      { code: 'ru', name: 'Русский', file: 'ru.json' },
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'kk', name: 'Қазақша', file: 'kk.json' }
+    ],
+    defaultLocale: 'ru',
+    langDir: 'locales/',
+    strategy: 'prefix',
+  },
   components: [
     {
       path: '~/components',

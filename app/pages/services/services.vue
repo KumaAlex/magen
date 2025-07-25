@@ -1,7 +1,7 @@
 <template>
   <section class="bg-black/90 pt-12">
     <h2 class="text-center text-[#FFD700] text-3xl font-bold mb-10">
-      С 2012 года мы рады предложить Вам следующие услуги:
+      {{ t('services.title') }}
     </h2>
 
     <!-- Desktop -->
@@ -21,44 +21,47 @@ import ServicesTop from "./services-top/services-top.vue";
 import ServicesMobile from "./services-mobile/services-mobile.vue";
 import ServicesBot from "./services-bot/services-bot.vue";
 
+const { t } = useI18n()
+
 const services: ServiceModel[] = [
   {
     id: 'object-guarding',
-    title: 'Охрана объектов',
+    title: t('services.objectGuarding.title'),
     icon: 'object-guard.webp',
-    description: 'Охрана различных объектов: бизнес-центров, складов, торговых точек и т.д.'
+    description: t('services.objectGuarding.description')
   },
   {
     id: 'cargo-escort',
-    title: 'Охрана и сопровождение грузов',
+    title: t('services.cargoEscort.title'),
     icon: 'cargo-escort.webp',
-    description: 'Гарантированная безопасность при транспортировке.'
+    description: t('services.cargoEscort.description')
   },
   {
     id: 'personal-security',
-    title: 'Профессиональная личная охрана',
+    title: t('services.personalSecurity.title'),
     icon: 'personal-security.webp',
-    description: 'Сопровождение VIP персон, политиков, бизнесменов.'
+    description: t('services.personalSecurity.description')
   },
   {
     id: 'event-security',
-    title: 'Охрана массовых мероприятий',
+    title: t('services.eventSecurity.title'),
     icon: 'event-security.webp',
-    description: 'Безопасность на концертах, фестивалях, конференциях.'
+    description: t('services.eventSecurity.description')
   },
   {
     id: 'security-systems',
-    title: 'Технические средства охраны',
+    title: t('services.securitySystems.title'),
     icon: 'security-systems.webp',
-    description: 'Системы управления доступом, системы видеонаблюдения, инженерно-технические средства охраны.'
+    description: t('services.securitySystems.description')
   },
   {
     id: 'fire-security-alarm',
-    title: 'Пожарно-охранная сигнализация',
+    title: t('services.fireSecurityAlarm.title'),
     icon: 'fire-security-alarm.webp',
-    description: 'Cистемы охранной и пожарной сигнализации.'
+    description: t('services.fireSecurityAlarm.description')
   }
 ]
+
 
 </script>
 
