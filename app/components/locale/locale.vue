@@ -8,15 +8,14 @@
 </template>
 
 <script setup lang="ts">
-const { locale, locales, setLocale } = useI18n()
+const { locale, locales } = useI18n()
 const router = useRouter()
 
 const cycleLanguage = () => {
   const codes = locales.value.map(l => l.code)
   const nextCode = codes[(codes.indexOf(locale.value) + 1) % codes.length]
   if (nextCode) {
-    setLocale(nextCode)
-    router.push('/')
+    router.push(nextCode === 'ru' ? '/' : `/${nextCode}`)
   }
 }
 
