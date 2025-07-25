@@ -1,8 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   ssr: true,
+  app: {
+    baseURL: '/',
+  },
   nitro: {
     preset: 'static'
   },
@@ -31,7 +33,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'ru',
     langDir: 'locales/',
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
   },
   components: [
     {

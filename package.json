@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "deploy": "gh-pages -d .output/public -b gh-pages",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
@@ -26,6 +27,7 @@
     "@nuxt/icon": "^1.15.0",
     "@nuxt/image": "^1.10.0",
     "@nuxt/scripts": "^0.11.10",
-    "@nuxt/ui": "^3.3.0"
+    "@nuxt/ui": "^3.3.0",
+    "gh-pages": "^6.3.0"
   }
 }
