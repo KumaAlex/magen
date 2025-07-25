@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-center gap-4">
     <a href="#home">
-      <NuxtImg
-          src="/icons/logo.png"
-          width="70"
-          alt="Logo"
+      <img
+        src="/icons/logo.png"
+        alt="Logo"
+        class="w-[70px]"
       />
     </a>
     <Navigation :is-scrolled="isScrolled" />

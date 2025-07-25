@@ -6,10 +6,10 @@
         class="scroll-mt-[100px] bg-black/40 text-white p-6 rounded-xl flex flex-col items-center text-center shadow-lg"
         :id="service.id"
     >
-      <NuxtImg
-          :src="`/images/services/${service.icon}`"
-          class="h-50 text-[#FFD700] mb-4 rounded"
-          :alt="service.icon"
+      <img
+        :src="`/images/services/${service.icon}`"
+        :alt="service.icon"
+        class="h-[200px] text-[#FFD700] mb-4 rounded"
       />
       <h3 class="text-[#FFD700] text-xl font-bold mb-2">{{ service.title }}</h3>
       <p class="text-sm mb-2">{{ service.description }}</p>

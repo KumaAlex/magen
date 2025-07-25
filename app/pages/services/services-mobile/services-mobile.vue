@@ -8,10 +8,10 @@
         class="w-[70vw] min-h-[300px] bg-gray-900/80 text-white p-6 rounded-xl flex-shrink-0 snap-center text-center"
         :id="service.id"
     >
-      <NuxtImg
-          :src="`/images/services/${service.icon}`"
-          class="h-30 sm:h-40 text-[#FFD700] mb-4 mx-auto rounded"
-          :alt="service.icon"
+      <img
+        :src="`/images/services/${service.icon}`"
+        :alt="service.icon"
+        class="h-[120px] sm:h-[160px] text-[#FFD700] mb-4 mx-auto rounded"
       />
       <h3 class="text-[#FFD700] text-lg font-bold mb-2">
         {{ service.title }}
